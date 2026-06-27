@@ -6,7 +6,7 @@ namespace WyriHaximus\React\Mutex;
 
 use WyriHaximus\React\Mutex\Contracts\LockInterface;
 
-final class LockStub implements LockInterface
+final readonly class LockStub implements LockInterface
 {
     public function __construct(private string $key, private string $rng)
     {

@@ -1,44 +1,55 @@
 {
-    "name": "wyrihaximus/react-mutex-test-utilities",
-    "description": "Mutex locking test utilities for ReactPHP projects",
-    "license": "MIT",
-    "require": {
-        "php": "^8.2",
-        "ext-random": "^8.2",
-        "react/async": "^4.2",
-        "react/event-loop": "^1.5",
-        "react/promise": "^3.1",
-        "wyrihaximus/async-test-utilities": "^7.3",
-        "wyrihaximus/constants": "^1.6",
-        "wyrihaximus/react-mutex-contracts": "^2.2",
-        "wyrihaximus/ticking-promise": "^3.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "WyriHaximus\\React\\Mutex\\": "src/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "composer/package-versions-deprecated": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "ergebnis/composer-normalize": true,
-            "icanhazstring/composer-unused": true,
-            "infection/extension-installer": true
-        },
-        "platform": {
-            "php": "8.2.13"
-        },
-        "sort-packages": true
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "composer normalize",
-            "composer update --lock --no-scripts"
-        ],
-        "post-update-cmd": [
-            "composer normalize",
-            "composer update --lock --no-scripts"
-        ]
+  "name": "wyrihaximus/react-mutex-test-utilities",
+  "description": "Mutex locking test utilities for ReactPHP projects",
+  "license": "MIT",
+  "require": {
+    "php": "^8.4",
+    "ext-random": "^8.4",
+    "phpunit/phpunit": "^13.1",
+    "react/async": "^4.2",
+    "react/event-loop": "^1.5",
+    "react/promise": "^3.1",
+    "wyrihaximus/async-test-utilities": "^13.3.0",
+    "wyrihaximus/react-mutex-contracts": "^2.2",
+    "wyrihaximus/ticking-promise": "^3.1"
+  },
+  "require-dev": {
+    "wyrihaximus/makefiles": "^0.12.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\React\\Mutex\\": "src/"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true,
+      "wyrihaximus/makefiles": true,
+      "wyrihaximus/test-utilities": true
+    },
+    "platform": {
+      "php": "8.4.13"
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "wyrihaximus": {
+      "supported-features": {
+        "unit-tests": false
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "make on-install-or-update || true"
+    ],
+    "post-update-cmd": [
+      "make on-install-or-update || true"
+    ]
+  }
 }
