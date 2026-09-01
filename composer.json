@@ -14,7 +14,7 @@
     "wyrihaximus/ticking-promise": "^3.1"
   },
   "require-dev": {
-    "wyrihaximus/makefiles": "^0.13.3"
+    "wyrihaximus/makefiles": "^0.14.7"
   },
   "autoload": {
     "psr-4": {
