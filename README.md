@@ -1,6 +1,6 @@
 # Test Utilities for wyrihaximus/react-mutex
 
-[![Continuous Integration](https://github.com/WyriHaximus/reactphp-mutex-test-utilities/actions/workflows/ci.yml/badge.svg)](https://github.com/WyriHaximus/reactphp-mutex-test-utilities/actions/workflows/ci.yml)
+[![Continuous Integration](https://github.com/WyriHaximus/reactphp-mutex-test-utilities/actions/workflows/ci.yaml/badge.svg)](https://github.com/WyriHaximus/reactphp-mutex-test-utilities/actions/workflows/ci.yaml)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus/react-mutex-test-utilities/v/stable.png)](https://packagist.org/packages/wyrihaximus/react-mutex-test-utilities)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus/react-mutex-test-utilities/downloads.png)](https://packagist.org/packages/wyrihaximus/react-mutex-test-utilities)
 [![License](https://poser.pugx.org/wyrihaximus/react-mutex-test-utilities/license.png)](https://packagist.org/packages/wyrihaximus/react-mutex-test-utilities)
